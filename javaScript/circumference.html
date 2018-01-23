@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>JavaScript</title>
+    </head>
+
+    <style>
+        #test{
+             background: #222222;
+             color: #ffffff;
+        }
+    </style>
+
+    <body>
+        <div id="test">
+            
+        </div>
+
+        <div id="dog">
+            
+        </div>
+
+        <div id="circumference">
+            
+        </div>
+
+        <div id="area">
+            
+        </div>
+    
+
+        <script type="text/javascript">
+            function age(yearBorn,year){
+                var result = year-yearBorn;
+                  return 'Age in '+ year +' is: ' + result;
+            }
+            document.querySelector('#test').innerHTML = age(1984,2030);
+
+            function dogAge(dogYearBorn,year){
+                var result = (year-dogYearBorn)*7;
+                  return 'Age in '+ year +' is: ' + result;
+            }
+            document.querySelector('#dog').innerHTML = dogAge(2005,2018);
+
+            function circumference(radius){
+                var result = (2*3.141592653589793238)*radius;
+                return 'Circumference of a circle with radius of '+ radius +' is: ' +result;
+            }
+
+            document.querySelector('#circumference').innerHTML = circumference(4);
+
+            function area(radius){
+                var result = 3.141592653589793238*(radius*radius);
+                return 'Area of a circle with radius of '+ radius +' is: ' +result;
+            }
+
+            document.querySelector('#area').innerHTML = area(4);
+        </script>
+    </body>
+</html>

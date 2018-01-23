@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+	
+	<head>
+		<title>Dog Years</title>
+		<script LANGUAGE="JavaScript">
+		function fido (form) {
+		form.dogyears.value = form.humanyears.value*7;
+		}
+	</script>
+	</head>
+<body>
+	<center>
+	<form>
+	Enter your dog's age:
+	<input TYPE ="text" NAME="humanyears" SIZE=15 >
+	<br><p>
+	<input TYPE ="button" VALUE="Calculate" ONCLICK="fido(this.form)">
+	<br><p>
+	Your dog's human age is:
+	<input TYPE="text" NAME="dogyears" SIZE=15 >
+	<br>
+	</form>
+	</center>
+</body>
+
+</html>
